@@ -61,12 +61,17 @@ public class Creature {
         if (happiness > 15) { happiness = 15; }
 
         System.out.println("That was so much fun! Lets do it again!");
+        System.exit(0);
     }
 
 
 
     public String checkStatus() {
         String status = "";
+
+        if ((happiness <= 0) || (energy <= 0) || (fullness <= 0 )) {
+            System.out.println("Oh no! " + this.getName() + " has died!");
+        }
 
         if (happiness <= 0) {
            status += "oh, " + this.getName() + " is feeling sad!\n";
@@ -82,6 +87,8 @@ public class Creature {
             status += "Whoops, " + this.getName() + " is super hungry!\n";
 
         }
+
+
 
         return status;
 
