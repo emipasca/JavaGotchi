@@ -50,6 +50,7 @@ public class Creature {
     }
 
 
+
     public void play() {
         if (happiness >= 12) {
             System.out.println("Hey, " + this.name + " is too happy!");
