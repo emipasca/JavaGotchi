@@ -7,6 +7,7 @@ public class Main {
 
         new Game().run();
 
+
     }
 
 }
